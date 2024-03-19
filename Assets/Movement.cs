@@ -23,7 +23,7 @@ public class Example : MonoBehaviour
         {
             playerVelocity.y = 0f;
         }
-
+        //Change jumping
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         controller.Move(move * Time.deltaTime * playerSpeed);
 
